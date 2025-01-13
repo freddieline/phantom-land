@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Design solution
 
-I used Redux to store the bookmark data locally as it's provides a centralised store that all components can access is a uniform way.
+I used Redux to store the bookmark data locally as it provides a centralised store that all components can access is a uniform way.
 
 The Bookmark interface contains an `id` attribute as React needs a unique id when rendering lists of data and it's possible there may be duplicate bookmark urls.
 

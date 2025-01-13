@@ -88,7 +88,7 @@ export default function SubmitALink() {
           {formData.name && <div className="">{formData.name}</div>}
           <div className="">{formData.url}</div>
           <a onClick={returnToOverviewPage} href="#">
-            Back to overiew
+            Back to overview
           </a>
         </div>
       )}

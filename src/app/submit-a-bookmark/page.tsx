@@ -16,7 +16,7 @@ export default function SubmitALink() {
   const [urlError, setURLError] = useState<string>("");
 
   const dispatch = useDispatch();
-  const router = useRouter(); 
+  const router = useRouter();
 
   const validateURL = (url: string) => {
     if (url) {
@@ -50,18 +50,17 @@ export default function SubmitALink() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const urlError = validateURL(formData.url);
-    if(urlError){
+    if (urlError) {
       setURLError(urlError);
     } else {
       setSubmitted(true);
       dispatch(addBookmark({ name: formData.name, url: formData.url }));
- 
     }
   };
 
-  const returnToOverviewPage =() => {
+  const returnToOverviewPage = () => {
     router.push("/");
-  }
+  };
 
   return (
     <div className="page">
@@ -86,9 +85,11 @@ export default function SubmitALink() {
       ) : (
         <div className="flex-col">
           <div>Thank you for submitting the bookmark:</div>
-          {  formData.name && <div className="">{formData.name}</div> }
+          {formData.name && <div className="">{formData.name}</div>}
           <div className="">{formData.url}</div>
-          <a onClick={returnToOverviewPage} href="#">Back to overiew</a>
+          <a onClick={returnToOverviewPage} href="#">
+            Back to overiew
+          </a>
         </div>
       )}
     </div>

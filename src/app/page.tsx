@@ -2,15 +2,13 @@
 import "./page.css";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import {
-  setCurrentPage,
-} from "../store/slices/bookmarkSlice";
+import { setCurrentPage } from "../store/slices/bookmarkSlice";
 import { useRouter } from "next/navigation";
 import { Bookmark } from "../types/types";
 
 export default function Home() {
   const dispatch = useDispatch();
-    const router = useRouter(); 
+  const router = useRouter();
   const { bookmarks, currentPage, bookmarksPerPage } = useSelector(
     (state: RootState) => state.bookmarks,
   );
@@ -30,11 +28,13 @@ export default function Home() {
 
   const navigateToSubmitBookmarkPage = () => {
     router.push("/submit-a-bookmark");
-  }
+  };
 
   return (
     <div className="page">
-      <a href="#" onClick={navigateToSubmitBookmarkPage}>Submit a new bookmark</a>
+      <a href="#" onClick={navigateToSubmitBookmarkPage}>
+        Submit a new bookmark
+      </a>
       <div className="list">
         {currentBookmarks.map((bookmark: Bookmark) => (
           <li key={bookmark.id}>

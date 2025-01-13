@@ -81,7 +81,7 @@ const bookmarkSlice = createSlice({
         url: action.payload.url,
         name: action.payload.name,
       };
-      state.bookmarks.push(newBookmark);
+      state.bookmarks.unshift(newBookmark);
     },
     deleteBookmark: (state, action) => {
       state.bookmarks = state.bookmarks.filter(

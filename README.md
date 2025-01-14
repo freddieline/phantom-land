@@ -6,11 +6,11 @@ front-end technologies (i.e. no backend database!).
 
 ## Design solution
 
-### Bookmark interface
+#### Bookmark interface
 The Bookmark interface contains an `id` attribute as React needs a unique id when rendering lists of data and it's possible there may be duplicate bookmark urls.
 I added an optional bookmark `name` attribute to make the bookmark urls easier to label. The overivew of all the bookmark links would show the `name` as link text if provided else the bookmark `url`.
 
-### Page layout
+#### Page layout
 Separate page for a new bookmark submission and a separate page for viewing the bookmarks as it separates out the concerns nicely.
 
 ## Technologies used

@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Design brief
+
+Develop a JavaScript web app that maintains a list of bookmarks (links). The user is
+able to add/edit/delete any link in the list. The application should only use
+front-end technologies (i.e. no backend database!).
 
 ## Design solution
 
-I used Redux to store the bookmark data locally as it provides a centralised store that all components can access is a uniform way.
+I used Redux to store the bookmark data locally as it provides a centralised store that all components can access in a uniform way.
 
 The Bookmark interface contains an `id` attribute as React needs a unique id when rendering lists of data and it's possible there may be duplicate bookmark urls.
 

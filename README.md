@@ -15,5 +15,5 @@ I used <a href="https://mui.com/material-ui/">Material UI</a> for text input and
 
 - Potentially I could disable the "Submit" button until the bookmark URL field had been filled in. This is more of a design preference though. 
 - Links could have been Material UI components.
-- Accessible labels on the input components
+- Accessible labels on all components
 - Edit functionality for existing links

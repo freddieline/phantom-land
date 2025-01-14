@@ -8,7 +8,7 @@ The Bookmark interface contains an `id` attribute as React needs a unique id whe
 
 I added an optional bookmark `name` attribute to make the bookmark urls easier to label. The overivew of all the bookmark links would show the `name` as link text if provided else the bookmark `url`.
 
-I used <a href="https://mui.com/material-ui/">Material UI</a> for text input and button components as they provide functionality for validation and the input labels look smooth.
+I used <a href="https://mui.com/material-ui/">Material UI</a> for text input and button components as it provides a visually appealing design language and handles the display of validation messages and input labels.
 
 
 ## Future improvements

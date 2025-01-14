@@ -14,8 +14,8 @@ I added an optional bookmark `name` attribute to make the bookmark urls easier t
 Separate page for a new bookmark submission and a separate page for viewing the bookmarks as it separates out the concerns nicely.
 
 ## Technologies used
-I used Redux to store the bookmark data locally as it provides a centralised store that all components can access in a uniform way.
-I used <a href="https://mui.com/material-ui/">Material UI</a> for text input and button components as it provides a visually appealing design language and handles the display of validation messages and input labels.
+- I used Redux to store the bookmark data locally as it provides a centralised store that all components can access in a uniform way.
+- I used <a href="https://mui.com/material-ui/">Material UI</a> for text input and button components as it provides a visually appealing design language and handles the display of validation messages and input labels.
 
 
 ## Future improvements

@@ -23,4 +23,5 @@ Separate page for a new bookmark submission and a separate page for viewing the 
 - Potentially I could disable the "Submit" button until the bookmark URL field had been filled in. This is more of a design preference though. 
 - Links could have been Material UI components.
 - Accessible labels on all components
-- Edit functionality for existing links
+- Edit/remove functionality for existing links
+- UI tests for each page and unit tests for the `bookmarkSlice.ts` file
